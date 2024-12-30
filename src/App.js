@@ -33,22 +33,23 @@ export class App extends Component {
 
         {/* ************Mounting*********** */}
         {/* <Mount /> */}
+        {/* mount is used to show that we can call api on componentdidmount */}
 
         {/* **************Previousprops in componentDidUpdate******************** */}
-        {/* <input
+        <input
           type="number"
           onChange={(e) => {
-            this.setState({ userid: e.currentTarget.value });
+            this.setState({ userid: e.target.value });
           }}
           value={this.state.userid}
         />
-        <Update userid={this.state.userid} /> */}
+        <Update userid={this.state.userid} />
 
         {/* **************************Stock*************** */}
-        <button onClick={() => this.setState({ flag: !this.state.flag })}>
+        {/* <button onClick={() => this.setState({ flag: !this.state.flag })}>
           Toggle Flag
         </button>
-        {this.state.flag && <Stock />}
+        {this.state.flag && <Stock />} */}
       </div>
     );
   }

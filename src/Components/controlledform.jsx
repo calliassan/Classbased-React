@@ -46,3 +46,7 @@ export class Controlledform extends Component {
     );
   }
 }
+
+//to check lifecycle, first comment the componentdidupdate and componentwillunmount
+//after that, clear console in inspect browser and uncomment didupdate
+//3rd, clear console and uncomment didunmount and then press toggle.
